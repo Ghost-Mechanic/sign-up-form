@@ -24,7 +24,7 @@
             <div id="actual-form">
                 <p id="form-caption">Sign up now!</p>
                 <div id="form-sides-container">
-                    <form id="form-left" action="test" method="post">
+                    <form id="form-left" action="" method="post">
                         <div class="form-item">
                             <label for="first-name">First Name</label>
                             <input type="text" id="first-name">
@@ -38,7 +38,7 @@
                             <input type="password" id="pwd" minlength="6">
                         </div>
                     </form>
-                    <form id="form-right" action="test" method="post">
+                    <form id="form-right" action="" method="post">
                         <div class="form-item">
                             <label for="first-name">Last Name</label>
                             <input type="text" id="last-name">
@@ -54,8 +54,19 @@
                     </form>
                 </div>
             </div>
-            <div id="bottom-form"></div>
+            <div id="bottom-form">
+                <button id="submit-form">Join Community</button>
+                <p id="bottom-text">Already a part of the community? <span id="log-in">Log in</span></p>
+            </div>
         </div>
     </div>
 </body>
+<script>
+    document.getElementById("submit-form").addEventListener("click", () => {
+        if (document.getElementById("form-left").checkValidity() && document.getElementById("form-right").checkValidity()) {
+            document.getElementById("form-left").submit();
+            document.getElementById("form-right").submit();
+        }
+    });
+</script>
 </html>

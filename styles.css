@@ -127,3 +127,33 @@ input:focus {
     box-shadow: 2px 2px 4px black;
     outline: none;
 }
+
+#bottom-form {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0%;
+    background-color: rgb(221, 221, 221);
+}
+
+#submit-form {
+    font-family: "Trebuchet MS", "Verdana", "Geneva";
+    font-size: 1.5rem;
+    margin: 4rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(103, 138, 253);
+    box-shadow: 2px 2px 4px black;
+}
+
+#bottom-text {
+    font-family: "Trebuchet MS", "Verdana", "Geneva";
+    margin-left: 4rem;
+}
+
+#log-in {
+    font-weight: bold;
+    color: rgb(103, 138, 253);
+}
